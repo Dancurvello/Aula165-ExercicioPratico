@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tesla Carros Elétricos</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+        
+        .car-image {
+            max-width: 50%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Tesla Carros Elétricos</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item active">
+                <a class="nav-link" href="#modelS">Model S</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#model3">Model 3</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#modelX">Model X</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#modelY">Model Y</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<!-- Carrossel (Carousel) -->
+<div id="teslaCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicadores -->
+    <ol class="carousel-indicators">
+        <li data-target="#teslaCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#teslaCarousel" data-slide-to="1"></li>
+        <li data-target="#teslaCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Slides do Carrossel -->
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="carousel1.jpg" alt="Tesla Car 1">
+        </div>
+        <div class="carousel-item">
+            <img src="carousel2.jpg" alt="Tesla Car 2">
+        </div>
+        <div class="carousel-item">
+            <img src="carousel3.jpg" alt="Tesla Car 3">
+        </div>
+    </div>
+
+    <!-- Controles do Carrossel -->
+    <a class="carousel-control-prev" href="#teslaCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#teslaCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+    </a>
+</div>
+
+<!-- Model S Container -->
+<div id="modelS" class="container mt-3">
+    <h1>Tesla Model S</h1>
+    <img src="models.png" alt="Tesla Model S" class="car-image">
+    <p>O Tesla Model S é um sedan elétrico de luxo.</p>
+    <button class="btn btn-primary">Saiba mais</button>
+    <div class="alert alert-success mt-3">
+        Este é um alerta de sucesso!
+    </div>
+</div>
+
+<!-- Model 3 Container -->
+<div id="model3" class="container mt-3">
+    <h1>Tesla Model 3</h1>
+    <img src="model3.png" alt="Tesla Model 3" class="car-image">
+    <p>O Tesla Model 3 é um sedan elétrico de médio porte.</p>
+    <button class="btn btn-primary">Saiba mais</button>
+    <!-- Alerta -->
+    <div class="alert alert-success mt-3">
+        Este é um alerta de sucesso!
+    </div>
+</div>
+
+<!-- Model X Container -->
+<div id="modelX" class="container mt-3">
+    <h1>Tesla Model X</h1>
+    <img src="modelx.png" alt="Tesla Model X" class="car-image">
+    <p>O Tesla Model X é um SUV elétrico com portas Falcon Wing.</p>
+    <button class="btn btn-primary">Saiba mais</button>
+    <!-- Alerta -->
+    <div class="alert alert-danger mt-3">
+        Este é um alerta de erro!
+    </div>
+</div>
+
+<!-- Model Y Container -->
+<div id="modelY" class="container mt-3">
+    <h1>Tesla Model Y</h1>
+    <img src="modely.png" alt="Tesla Model Y" class="car-image">
+    <p>O Tesla Model Y é um SUV elétrico compacto.</p>
+    <button class="btn btn-primary">Saiba mais</button>
+    <!-- Alerta -->
+    <div class="alert alert-danger mt-3">
+        Este é um alerta de erro!
+    </div>
+</div>
+
+<!-- Rodapé -->
+<footer class="bg-dark text-light text-center py-3">
+    © 2023 Tesla Carros Elétricos
+</footer>
+
+</body>
+</html>
